@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding of Wahyu & Riski</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- FILE AUDIO / MUSIK LATAR -->
+    <audio id="audio-wedding" loop>
+        <source src="musik.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- 1. HALAMAN SAMPUL / COVER (FULL SCREEN) -->
+    <div id="cover-undangan">
+        <div class="cover-center">
+            <p class="sub-judul">The Wedding Of</p>
+            <h1>Wahyu & Riski</h1>
+            <div class="kotak-tamu">
+                <p>Kepada Yth. Bapak/Ibu/Saudara/i:</p>
+                <h2 id="nama-tamu-di-cover">Tamu Undangan</h2>
+            </div>
+            <button id="tombol-buka">📩 Buka Undangan</button>
+        </div>
+    </div>
+
+    <!-- KONTEN UTAMA (TERKUNCI SEBELUM TOMBOL DIKLIK) -->
+    <main id="konten-utama" class="hidden">
+        
+        <!-- 2. HERO IMAGE BANNER + COUNTDOWN -->
+        <section class="hero-section">
+            <h2>Wahyu & Riski</h2>
+            <p>Sabtu, 06 Juni 2026</p>
+
+            <!-- COUNTDOWN TIMER -->
+            <div class="countdown-box">
+                <div class="countdown-item">
+                    <span id="cd-hari">00</span>
+                    <label>Hari</label>
+                </div>
+                <div class="countdown-item">
+                    <span id="cd-jam">00</span>
+                    <label>Jam</label>
+                </div>
+                <div class="countdown-item">
+                    <span id="cd-menit">00</span>
+                    <label>Menit</label>
+                </div>
+                <div class="countdown-item">
+                    <span id="cd-detik">00</span>
+                    <label>Detik</label>
+                </div>
+            </div>
+
+            <!-- TOMBOL SIMPAN DI KALENDER -->
+            <!-- GANTI text, details, location, dates sesuai data Anda -->
+            <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=The%20Wedding%20Of%20Wahyu%20%26%20Riski&details=Pernikahan%20Wahyu%20%26%20Riski&location=Rumah%20Mempelai%20Wanita&dates=20260606T020000Z%2F20260606T090000Z"
+               target="_blank" class="btn-kalender">🗓️ Simpan di Kalender</a>
+        </section>
+
+        <!-- 3. KATA MUTIARA / QUOTE -->
+        <section class="quote-section reveal">
+            <h3>QS. Ar-Rum Ayat 21</h3>
+            <p class="isi-quote">
+                "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang."
+            </p>
+        </section>
+
+        <!-- 4. PROFIL MEMPELAI -->
+        <section class="mempelai-section reveal">
+            <p class="salam">Assalamu'alaikum Wr. Wb.</p>
+            <p class="pengantar">Dengan memohon rahmat Allah SWT, kami mengundang Anda ke pernikahan kami:</p>
+            
+            <div class="mempelai-flex">
+                <!-- MEMPELAI PRIA -->
+                <div class="kartu-mempelai">
+                    <img src="wahyu.jpg" alt="Wahyu">
+                    <h3>Wahyu [Nama Lengkap Pria]</h3>
+                    <p>Putra dari: <br> Bpk. Nama Ayah & Ibu Nama Ibu</p>
+                    <!-- GANTI link Instagram -->
+                    <a href="https://www.instagram.com/" target="_blank" class="btn-instagram">📸 Instagram</a>
+                </div>
+                
+                <div class="pembatas">&</div>
+                
+                <!-- MEMPELAI WANITA -->
+                <div class="kartu-mempelai">
+                    <img src="riski.jpg" alt="Riski">
+                    <h3>Riski [Nama Lengkap Wanita]</h3>
+                    <p>Putri dari: <br> Bpk. Nama Ayah & Ibu Nama Ibu</p>
+                    <!-- GANTI link Instagram -->
+                    <a href="https://www.instagram.com/" target="_blank" class="btn-instagram">📸 Instagram</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. DETAIL ACARA & LOKASI PETA -->
+        <section class="acara-section reveal">
+            <div class="box-acara">
+                <h3>Akad Nikah</h3>
+                <p><b>09.00 WIB - Selesai</b></p>
+                <p>Gedung Pernikahan / Rumah Mempelai Wanita<br>Jl. Alamat Lengkap No. 123, Kota</p>
+            </div>
+
+            <div class="box-acara">
+                <h3>Resepsi</h3>
+                <p><b>11.00 - 16.00 WIB</b></p>
+                <p>Gedung Pernikahan / Rumah Mempelai Wanita<br>Jl. Alamat Lengkap No. 123, Kota</p>
+            </div>
+
+            <!-- GANTI URL DI BAWAH INI DENGAN LINK GOOGLE MAPS LOKASI ANDA -->
+            <a href="https://maps.google.com" target="_blank" class="btn-maps">📍 Buka Peta Lokasi (Google Maps)</a>
+        </section>
+
+        <!-- 6. GALERI FOTO GRID -->
+        <section class="galeri-section reveal">
+            <h3>Momen Bahagia Kami</h3>
+            <div class="grid-galeri">
+                <img src="foto1.jpg" alt="Foto 1">
+                <img src="foto2.jpg" alt="Foto 2">
+                <img src="foto3.jpg" alt="Foto 3">
+                <img src="foto4.jpg" alt="Foto 4">
+                <img src="foto5.jpg" alt="Foto 5">
+                <img src="foto6.jpg" alt="Foto 6">
+            </div>
+        </section>
+
+        <!-- 7. LOVE STORY / TIMELINE -->
+        <section class="lovestory-section reveal">
+            <h3>Love Story</h3>
+            <div class="timeline">
+                <!-- GANTI isi setiap milestone sesuai kisah nyata Anda -->
+                <div class="timeline-item">
+                    <img src="foto1.jpg" alt="Pertemuan">
+                    <div class="timeline-konten">
+                        <span class="timeline-tahun">2020</span>
+                        <p class="timeline-judul">Kisah Pertemuan</p>
+                        <p>Awal mula kami dipertemukan oleh takdir yang indah.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <img src="foto2.jpg" alt="Pacaran">
+                    <div class="timeline-konten">
+                        <span class="timeline-tahun">2022</span>
+                        <p class="timeline-judul">Menjalin Kebersamaan</p>
+                        <p>Kami memutuskan untuk serius melangkah bersama.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <img src="foto3.jpg" alt="Lamaran">
+                    <div class="timeline-konten">
+                        <span class="timeline-tahun">2025</span>
+                        <p class="timeline-judul">Lamaran</p>
+                        <p>Momen sakral yang mengikat janji kami secara resmi.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <img src="foto4.jpg" alt="Hari Bahagia">
+                    <div class="timeline-konten">
+                        <span class="timeline-tahun">06 Juni 2026</span>
+                        <p class="timeline-judul">Hari Bahagia</p>
+                        <p>Hari yang paling kami nantikan — hari pernikahan kami.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. KADO DIGITAL / MULTI-BANK -->
+        <section class="kado-section reveal">
+            <h3>Wedding Gift</h3>
+            <p>Tanpa mengurangi rasa hormat, bagi Anda yang ingin memberikan tanda kasih secara cashless dapat melalui:</p>
+            
+            <div class="container-rekening">
+                <!-- KARTU BANK 1 -->
+                <div class="box-rekening">
+                    <h4>Bank BCA</h4>
+                    <p class="nomor-rek" id="rek-bca">667055XXXX</p>
+                    <p>a.n. Wahyu</p>
+                    <button class="btn-copy" onclick="salinRekening('rek-bca', this)">📋 Salin Nomor</button>
+                </div>
+
+                <!-- KARTU BANK 2 -->
+                <div class="box-rekening">
+                    <h4>Bank Mandiri</h4>
+                    <p class="nomor-rek" id="rek-mandiri">1370012XXXXXX</p>
+                    <p>a.n. Riski</p>
+                    <button class="btn-copy" onclick="salinRekening('rek-mandiri', this)">📋 Salin Nomor</button>
+                </div>
+
+                <!-- KARTU E-WALLET 3 -->
+                <div class="box-rekening">
+                    <h4>E-Wallet DANA</h4>
+                    <p class="nomor-rek" id="rek-dana">08123456XXXX</p>
+                    <p>a.n. Wahyu</p>
+                    <button class="btn-copy" onclick="salinRekening('rek-dana', this)">📋 Salin Nomor</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. UCAPAN & RSVP -->
+        <section class="ucapan-section reveal">
+            <h3>Ucapan & Doa</h3>
+            <p>Berikan ucapan harapan dan do'a kepada kedua mempelai</p>
+
+            <div class="form-ucapan">
+                <input type="text" id="input-nama" placeholder="Nama Anda" maxlength="50">
+                
+                <div class="rsvp-group">
+                    <p><b>Konfirmasi Kehadiran</b></p>
+                    <div class="rsvp-pilihan">
+                        <label class="rsvp-label">
+                            <input type="radio" name="kehadiran" value="Hadir"> Hadir
+                        </label>
+                        <label class="rsvp-label">
+                            <input type="radio" name="kehadiran" value="Masih Ragu"> Masih Ragu
+                        </label>
+                        <label class="rsvp-label">
+                            <input type="radio" name="kehadiran" value="Tidak Hadir"> Tidak Hadir
+                        </label>
+                    </div>
+                </div>
+
+                <textarea id="input-ucapan" placeholder="Tulis ucapan & doa Anda di sini..." rows="4" maxlength="300"></textarea>
+                <button id="tombol-kirim-ucapan" onclick="kirimUcapan()">💌 Kirim</button>
+            </div>
+
+            <!-- DAFTAR UCAPAN YANG SUDAH MASUK -->
+            <div id="daftar-ucapan"></div>
+        </section>
+
+        <!-- 10. PENUTUP / FOOTER -->
+        <footer class="reveal">
+            <p>Terima kasih atas doa dan kehadiran Anda di momen istimewa kami.</p>
+            <p class="salam">Wassalamu'alaikum Wr. Wb.</p>
+            <p><b>Wahyu & Riski</b></p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
