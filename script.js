@@ -2,8 +2,8 @@
 // ║           KONFIGURASI SUPABASE — ISI BAGIAN INI             ║
 // ║  Dapatkan dari: supabase.com → Project → Settings → API    ║
 // ╚══════════════════════════════════════════════════════════════╝
-const SUPABASE_URL = 'https://egvepeenlkqypurilygd.supabase.co/rest/v1/';  // ← ganti ini
-const SUPABASE_KEY = 'sb_publishable_1_ICZKca_uNHQ0ok-hn3SA_axndBLwO;  // ← ganti ini (anon public key)
+const SUPABASE_URL = '';  // ← ganti ini
+const SUPABASE_KEY = '';  // ← ganti ini (anon public key)
 
 // ==========================================
 // HELPER: Kirim request ke Supabase REST API
