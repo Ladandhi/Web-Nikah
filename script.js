@@ -2,8 +2,8 @@
 // ║           KONFIGURASI SUPABASE — ISI BAGIAN INI             ║
 // ║  Dapatkan dari: supabase.com → Project → Settings → API    ║
 // ╚══════════════════════════════════════════════════════════════╝
-const SUPABASE_URL = '';  // ← ganti ini
-const SUPABASE_KEY = '';  // ← ganti ini (anon public key)
+const SUPABASE_URL = 'https://egvepeenlkqypurilygd.supabase.co/rest/v1/';  // ← ganti ini
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVndmVwZWVubGtxeXB1cmlseWdkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI1NjgxNzUsImV4cCI6MjA5ODE0NDE3NX0.okDpndfBCRJefWhHNxpCtDhcWqoL6lj-OSpFbX1TfUA';  // ← ganti ini (anon public key)
 
 // ==========================================
 // HELPER: Kirim request ke Supabase REST API
